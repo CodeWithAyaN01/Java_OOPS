@@ -1,0 +1,4 @@
+public hi
+{
+    public sta
+}
