@@ -9,7 +9,7 @@ public class Questios
             int marks;
             System.out.println("Enter marks ");
             marks = input.nextInt();
-            System.out.println("Your marks is " + marks);
+            System.out.println("Your marks are " + marks);
         }
 }
 
