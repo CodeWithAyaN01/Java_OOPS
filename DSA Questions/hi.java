@@ -1,4 +1,0 @@
-public hi
-{
-    public sta
-}
