@@ -9,7 +9,6 @@ public class fibo
         //  to make fibonaci 
 
         int a = 0 ; int b = 1 ;
-        int count = 0;
         int num;
         int temp;
 
@@ -23,7 +22,7 @@ public class fibo
             temp = b;
             a = a+b;
             b = a;
-            a = temp;            
+            a = temp;
         }
     }
 }
