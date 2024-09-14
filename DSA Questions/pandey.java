@@ -8,9 +8,6 @@ public class pandey {
         String user = sc.next();
         System.out.println(user);
         int length = user.length();
-    
-
-
 
     }
 }
