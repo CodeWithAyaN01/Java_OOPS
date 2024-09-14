@@ -22,7 +22,7 @@ public class counting {
         {
             if (str.charAt(i) == charr.charAt(0))
             {
-                count++;
+                count++; 
             }
 
         }
