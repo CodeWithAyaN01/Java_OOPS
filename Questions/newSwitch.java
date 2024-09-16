@@ -21,6 +21,16 @@ public class newSwitch {
             case  "sout" -> System.out.println("direct print statement");
             default -> System.out.println("hey please dont waste time and code");
         }
+            // THIS IS THE OLD SWITCH WHICH WE USE IN C LANGUAGE //
+        switch (name)
+        {
+            case "any":
+                System.out.println("HI");break;
+            case "bro":
+            System.out.println("kaise ho bhai");
+            default:
+                System.out.println("kuch ni hota bhai");
+        }
     }
     
 }
