@@ -61,7 +61,5 @@ public class  counting
             number = number/10;
         }
         System.out.println("The number \'" + num + "\' is found " + counting + " Times");
-
-
     }
 }
