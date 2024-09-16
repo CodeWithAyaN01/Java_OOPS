@@ -19,6 +19,7 @@ public class newSwitch {
             case "Ashutosh" -> System.out.println("Doke baj 2");
             case "kumar" -> System.out.println("you has to ");
             case  "sout" -> System.out.println("direct print statement");
+            default -> System.out.println("hey please dont waste time and code");
         }
     }
     
