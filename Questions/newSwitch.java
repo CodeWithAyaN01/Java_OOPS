@@ -26,6 +26,7 @@ public class newSwitch {
         {
             case "any":
                 System.out.println("HI");break;
+                //wrerfer
             case "bro":
             System.out.println("kaise ho bhai");break;
             default:
