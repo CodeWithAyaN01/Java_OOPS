@@ -7,7 +7,7 @@ public class fibo
         System.out.println("Welcome to my Program for Fibonaci ");
         Scanner sc = new Scanner(System.in);
         //  to make fibonaci 
-
+        // nice
         int a = 0 ; int b = 1 ;
         int num;
         int temp;
