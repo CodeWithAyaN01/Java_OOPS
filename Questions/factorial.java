@@ -1,8 +1,6 @@
-
 import java.util.Scanner;
-
-
-public class factorial {
+public class factorial 
+{
     public static void main(String[] args) {
         System.out.println("Welcome to Factorial \n\n");
         Scanner sc = new Scanner(System.in);
