@@ -10,13 +10,14 @@ public class Questions
         System.out.println();
         isprime(number);
     }
+    // not correct code 
     static void  isprime(int a)
     {
         int i = 2;
-        while(i<=a)
+        while(a>=i)
         {
             if (a % i == 0){
-                System.out.println("not a prime ! ");break;
+                System.out.println("Not  prime ! ");break;
             }
             if (a % i != 0)
             {
