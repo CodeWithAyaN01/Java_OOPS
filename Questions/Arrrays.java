@@ -18,16 +18,29 @@ public class Arrrays
     public static void main(String[] args) {
         System.out.println("Enter the array");
         Scanner sc = new Scanner(System.in);
-        int rows =3;
-        int column =3;
+        System.out.println("Enter Rows: ");
+        int rows = sc.nextInt();
+        System.out.println("Enter Column: ");
+        int column = sc.nextInt();
         int matrix[][] = new int[rows][column];
         System.out.println("enter the Elems: ");
-        for (int i = 0 ; i<rows ; i++ )
+        
+        // for (int i = 0 ; i<rows ; i++ )
+        // {
+        //     for (int j = 0 ; j<column ; j++)
+        //         {
+        //             matrix[i][j] = sc.nextInt();
+        //         }
+        // }
+
+        // one more way of writing this is:
+
+        for (int i = 0 ; i < matrix.length ; i++) //  this will give no of rows
         {
-            for (int j = 0 ; j<column ; j++)
-                {
-                    matrix[i][j] = sc.nextInt();
-                }
+            for (int j = 0 ; j < matrix[i].length ; j++) //  this will give no of cloumn in the particular rows
+            {
+                matrix[i][j] = sc.nextInt();
+            }
         }
         System.out.println(Arrays.deepToString(matrix)); // deep to String
     }
