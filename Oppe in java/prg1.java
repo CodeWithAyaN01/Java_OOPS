@@ -11,6 +11,7 @@ class Mentor
         System.out.println("Mentor name is : " + Mentor_name);
         System.out.println("The teacher handels section: " + section);
         System.out.println("Student score to "+Mentor_name + " is "+ score);
+        
     }
 }
 public class prg1{
