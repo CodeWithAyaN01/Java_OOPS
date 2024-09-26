@@ -1,5 +1,5 @@
-
 import java.util.Scanner;
+
 class Mentor
 {
     String Mentor_name;
@@ -11,7 +11,6 @@ class Mentor
         System.out.println("Mentor name is : " + Mentor_name);
         System.out.println("The teacher handels section: " + section);
         System.out.println("Student score to "+Mentor_name + " is "+ score);
-        
     }
 }
 public class prg1{
@@ -30,7 +29,6 @@ public class prg1{
         System.out.println("***************************************************************************");
         System.out.println("                  Display function working here ");
         System.out.println("***************************************************************************\n");
-        System.out.flush(); // clearing screen
         BB.Display();
     }
     
