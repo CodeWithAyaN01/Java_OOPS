@@ -29,7 +29,6 @@ public class prg2
         System.out.print("Enter how many Student are there: ");
         int n = sc.nextInt();
         Mentoring_for_Student_IS[] stdInfo = new Mentoring_for_Student_IS[n]; // making array of student[] of n size and askin n from user
-        
         for(int i = 0 ; i<n ; i ++)
         {
             stdInfo[i] = new Mentoring_for_Student_IS(); //this is to initilizse a object;
