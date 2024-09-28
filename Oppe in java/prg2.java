@@ -1,15 +1,13 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Array;
  //  calss name 
 class Mentoring_for_Student_IS
 {   
     int usn;
     String StudentName;
-    // THIS IS A CONSTRUCTER // 
-    Mentoring_for_Student_IS(int usn , String StudentName) {
-        this.usn = usn;
-        this.StudentName = StudentName;
+    // THIS IS A UNPARAMETERIZED CONSTRUCTER // 
+    Mentoring_for_Student_IS() {
+        usn = 0;
+        StudentName = "NULL";
     }
 
     // dispaly function 
@@ -28,13 +26,9 @@ public class prg2
 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] rolls = new int[100];
-        System.out.println("How many student details you want to add: ");
-        int countStd = nextInt();
-        for (int i = 0 ; i<countStd ; i++)
-        {
-            
-        }
-        
+        Mentoring_for_Student_IS s1 = new Mentoring_for_Student_IS();
+        s1.usn = 037;
+        s1.StudentName = "Ayna";
+        s1.Display();
     }
 }
