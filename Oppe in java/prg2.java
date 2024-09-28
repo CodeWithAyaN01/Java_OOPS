@@ -1,12 +1,18 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Array;
-
+ //  calss name 
 class Mentoring_for_Student_IS
 {   
     int usn;
     String StudentName;
+    // THIS IS A CONSTRUCTER // 
+    Mentoring_for_Student_IS(int usn , String StudentName) {
+        this.usn = usn;
+        this.StudentName = StudentName;
+    }
 
+    // dispaly function 
     void Display()
     {
         System.out.println("********************************************************************");
