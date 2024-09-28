@@ -32,6 +32,7 @@ public class prg2
         for(int i = 0 ; i<n ; i ++)
         {
             stdInfo[i] = new Mentoring_for_Student_IS(); //this is to initilizse a object;
+            
             System.out.println("Enter details of Student "+(i+1));
             System.out.print("Enter the usn of Student:");
             stdInfo[i].usn = sc.nextInt();
