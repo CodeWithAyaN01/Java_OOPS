@@ -26,7 +26,6 @@ public class Q2 {
                     System.out.println("true");
                     // System.exit(0);
                 }
-                
             }
         }
         System.out.println("The total number of pair is " + count);
