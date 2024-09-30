@@ -23,7 +23,7 @@ public class Q2 {
                 if(list[i] + list[j] == k)
                 {
                     System.out.println("true");
-                    break;
+                    System.exit(0);
                 }
                 
             }
