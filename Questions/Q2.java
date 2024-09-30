@@ -22,6 +22,7 @@ public class Q2 {
             {   
                 if(list[i] + list[j] == k)
                 {
+                    System.out.println("subset is {"+list[i]+" " + list[j] + "}");
                     System.out.println("true");
                     System.exit(0);
                 }
