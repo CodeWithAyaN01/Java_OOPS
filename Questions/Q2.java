@@ -15,19 +15,20 @@ public class Q2 {
             list[i] = sc.nextInt();
         }
         System.out.println(Arrays.toString(list));
-
+        int count = 0;
         for (int i = 0 ; i<list.length ; i++)
         {
             for (int j = 0 ; j<list.length ; j++)
             {   
                 if(list[i] + list[j] == k)
                 {
-                    System.out.println("subset is {"+list[i]+" " + list[j] + "}");
+                    System.out.println("subset is {"+list[i]+" " + list[j] + "}");count++;
                     System.out.println("true");
-                    System.exit(0);
+                    // System.exit(0);
                 }
                 
             }
         }
+        System.out.println("The total number of pair is " + count);
     }
 }
