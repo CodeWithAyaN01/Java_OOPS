@@ -14,7 +14,8 @@ int increaseSalary(struct Employee emp) {
     return inc;
 }
 
-int main() {
+int main() 
+{
     struct Employee emp;  // Create a variable of the Employee structure
 
     printf("Welcome to My Company Salary Increment System:\n");
@@ -31,5 +32,5 @@ int main() {
     int newAmount = increaseSalary(emp);
 
     // Display the result
-    printf("The new amount for %s with a percentage increment of %d%% is: %d\n", 
-           emp.EmpName, emp.IncrementInPercentage,
+    printf("The new amount for %s with a percentage increment of %d% is: %d\n",emp.EmpName, emp.IncrementInPercentage,newAmount);
+}
