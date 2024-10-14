@@ -49,10 +49,9 @@ public class prg4
 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the stack size:"); int StackSize = sc.nextInt();
-        function s = new function(StackSize);
-        System.out.print("Enter equation: ");String equation = sc.next();
-        // System.out.println(""+equation);
+        System.out.print("Enter the stack size:"); int StackSize = sc.nextInt(); // stack size 
+        function s = new function(StackSize); //  creating object 
+        System.out.print("Enter equation: ");String equation = sc.next(); // taking equation
         System.out.print("Length of equation is : " + equation.length());
         for (int i = 0 ; i < equation.length() ; i++)
         {
@@ -62,3 +61,5 @@ public class prg4
 
     }
 }
+
+
