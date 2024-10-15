@@ -8,6 +8,9 @@ public class ArrayListtt {
         main.set(1,100); //  setting the element of the index .set(index,value)
         main.remove(1); // remove the elem from the index 
         main.remove(Integer.valueOf(8)); // removes the value 8 not the index of 8
-         System.out.println((main));
+        System.out.println((main));
+        ArrayList<String> main2;
+        main2 = new ArrayList<>(Arrays.asList("Hello", "not hello")); //  assign values like this only 
+        System.out.println(main2);
     }
 }
