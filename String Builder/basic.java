@@ -19,5 +19,16 @@ public class basic {
         System.out.println(a == b); // true
         String c = new String("hello"); //  this creates new object of  hello so object of a and b are not same as object of c;
         System.out.println( a == b && b == c); // false
+
+
+        // TO ONLY CHECK VALUES WE CAN USE (.euals()) METHOD; // 
+
+        String d = "hi";
+        String f = new String("hi");
+        String g = "hi";
+        System.out.println(d.equals(f)); //  true 
+        System.out.println(d.equals(g)); // true 
+        System.out.println(d == f); // false
+        System.out.println(d == g); // ture
     }
 }
