@@ -9,15 +9,17 @@ class Stack1
         stack = new int[max];
         top = -1;
     }
+
     public boolean isEmpty(){
         return top == -1; // if true stack is Empty;
     }
+
     public boolean isFull(){
         return top == max-1; // if true its full 
     }
 
     public void push(int value){ // push
-        if (top != max-1)
+        if (!isFull())
         {
             stack[++top] = value;
         }
@@ -25,8 +27,9 @@ class Stack1
             System.out.println("Stack Overflow");
         }
     }
+
     public int pop(){ // pop
-        if (top != -1)
+        if (!isEmpty())
         {
             return stack[top--];
         }
@@ -36,6 +39,7 @@ class Stack1
             return -1;
         }
     }
+
     public void display() // display
     {
         System.out.println("Elements of stack are: ");
@@ -46,6 +50,7 @@ class Stack1
         System.out.println();
     }
 }
+
 public class Program2 {
     public static void main(String[] args) {
         Stack1 s = new Stack1(10);
