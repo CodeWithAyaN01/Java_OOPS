@@ -10,7 +10,7 @@ class Figure
         System.out.println("Erasing a shape");
     }
     
-    public class Circle extends Figure
+    class Circle extends Figure
     {
         // @Override
         public void draw()
@@ -24,7 +24,7 @@ class Figure
         }
     }
     
-    public class Triangle extends Figure
+    class Triangle extends Figure
     {
         // @Override
         public void draw()
@@ -38,7 +38,7 @@ class Figure
         }
     }
     
-    public class square extends Figure
+    class square extends Figure
     {
         // @Override
         public void draw()
@@ -61,10 +61,10 @@ public class program5
         fig[1] = insFig.new Triangle();
         fig[2] = insFig.new square();
 
-        for (Figure shape : fig)
+        for (Figure var : fig) // here fig is a array 
         {
-            shape.draw();
-            shape.erase();
+            var.draw();
+            var.erase();
             System.out.println();
         }
     }
