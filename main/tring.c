@@ -1,36 +1,23 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <time.h>
 
-// Define a structure for Employee
-struct Employee {
-    char EmpName[20];
-    int CurrAmount;
-    int IncrementInPercentage;
-};
+int main() {
+    // Record the start time
+    clock_t start = clock();
 
-// Function to increase salary
-int increaseSalary(struct Employee emp) {
-    int inc = emp.CurrAmount + ((emp.CurrAmount * emp.IncrementInPercentage) / 100);
-    return inc;
-}
+    // Loop to print numbers
+    for (int i = 0; i < 100000; i++) {
+        printf("%d\n", i);
+    }
 
-int main() 
-{
-    struct Employee emp;  // Create a variable of the Employee structure
+    // Record the end time
+    clock_t end = clock();
 
-    printf("Welcome to My Company Salary Increment System:\n");
+    // Calculate time taken in seconds
+    double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
 
-    // Get employee details
-    printf("Enter the name of Employee: ");
-    gets(emp.EmpName);
-    printf("Enter the current amount: ");
-    scanf("%d", &emp.CurrAmount);
-    printf("Enter the percentage increment: ");
-    scanf("%d", &emp.IncrementInPercentage);
+    // Print the result
+    printf("Time taken: %.2f seconds\n", time_taken);
 
-    // Calculate new salary
-    int newAmount = increaseSalary(emp);
-
-    // Display the result
-    printf("The new amount for %s with a percentage increment of %d% is: %d\n",emp.EmpName, emp.IncrementInPercentage,newAmount);
+    return 0;
 }
