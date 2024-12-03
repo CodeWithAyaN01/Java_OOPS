@@ -1,11 +1,11 @@
 // abstrat class
 abstract class Shape{
-    public abstract double CalArea();
-    public abstract double CalPerimeter();
+    public abstract double CalArea(); // abstract method
+    public abstract double CalPerimeter(); // abstract method
 }
 class Circle extends Shape{
     private double radius;
-    // Cons
+    // Construct
     public Circle(double radius){
         this.radius = radius;
     }
@@ -22,7 +22,7 @@ class Circle extends Shape{
 class Triangle extends Shape{
     private double side1,side2,side3;
     // Cons
-    public Triangle(double side1,double side2,double side3)
+    public Triangle(int side1,int side2,int side3)
     {
         this.side1 = side1;
         this.side2 = side2;
