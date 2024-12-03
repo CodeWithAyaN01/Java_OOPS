@@ -17,6 +17,7 @@ class Rectangle implements Resizable{
         this.height = height;
     }
 
+    // Methods
     public int getWidth()
     {
         return width;
@@ -46,7 +47,7 @@ public class program7{
         r.resizeHeight(5);
         r.resizeWidth(7);
         System.out.println();
-        System.out.printf("new Width and height is %d %d",r.getWidth(),r.getHeight());
+        System.out.printf("New Width and height is %d %d",r.getWidth(),r.getHeight());
 
     }
 }
