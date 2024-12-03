@@ -1,3 +1,4 @@
+// package IA1;
 
 class Figure
 {
