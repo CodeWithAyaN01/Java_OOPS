@@ -9,11 +9,12 @@ class Circle extends Shape{
     public Circle(double radius){
         this.radius = radius;
     }
-
+    @Override
     public double CalArea()
     {
         return Math.PI*radius*radius;
     }
+    @Override   
     public double CalPerimeter()
     {
         return 2*Math.PI*radius;
@@ -28,13 +29,14 @@ class Triangle extends Shape{
         this.side2 = side2;
         this.side3 = side3;
     }
-
+    @Override
     public double CalArea()
     {
         double s = (side1 + side2 + side3)/2;
         return Math.sqrt(s*(s-side1) * (s-side2) * (s-side3));
     }
 
+    @Override   
     public double CalPerimeter()
     {
         return side1+side2+side3;
