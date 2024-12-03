@@ -6,7 +6,7 @@ class DivisionByZero extends Exception{
     }
 }class Calculator {
     // Method
-    public static double divide(int numerator,int denominator) throws DivisionByZero
+    static double divide(int numerator,int denominator) throws DivisionByZero
     {
         if (denominator == 0)
         {

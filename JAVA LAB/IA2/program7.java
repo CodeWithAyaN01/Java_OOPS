@@ -26,7 +26,6 @@ class Rectangle implements Resizable{
     {
         return height;
     }
-
     @Override
     public void resizeWidth(int width)
     {

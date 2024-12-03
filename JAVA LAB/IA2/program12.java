@@ -1,5 +1,6 @@
 // package IA2; class Mythread
 class MyThread extends Thread {
+    
     public MyThread(String threadName) {
         super(threadName);
     }
@@ -19,9 +20,11 @@ class MyThread extends Thread {
 public class program12 {
     public static void main(String[] args) {
         MyThread myThread = new MyThread("Child Thread ");
-        myThread.start();
+        myThread.start(); // child thread
+
+
         for(int i = 0; i <=5 ; i++) {
-            System.out.println(Thread.currentThread().getName() + "-Count" + i);
+            System.out.println(Thread.currentThread().getName() + "-Count" + i); //  main thread
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {

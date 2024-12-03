@@ -2,7 +2,7 @@
 
 class MyRunnable implements Runnable {
 
-    private String threadname;
+    String threadname;
     public MyRunnable (String name) {
         this.threadname = name;
     }
@@ -19,7 +19,6 @@ class MyRunnable implements Runnable {
         }
     }
 }
-
 public class program11
 {
     public static void main(String[] args) {
