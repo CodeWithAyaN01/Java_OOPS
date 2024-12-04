@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Main {
+public class Matrix01s {
     static Scanner sc = new Scanner(System.in);
     static int rows;
     static int col;
