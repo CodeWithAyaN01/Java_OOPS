@@ -1,3 +1,7 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
 class MyThread implements Runnable {
     public void run() {
         for (int i = 1; i <= 5; i++) {
@@ -10,7 +14,6 @@ class MyThread implements Runnable {
         }
     }
 }
-
 public class Runnable {
     public static void main(String[] args) {
         MyThread myRunnable = new MyThread();
