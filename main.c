@@ -65,7 +65,7 @@ void createlist(int n) {
                 temp = temp->next;
             }
             temp->next = newCounter; 
-            newCounter->next = head; 
+            newCounter->next = head; // circular 
         }
     }
 }
