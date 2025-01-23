@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class DivisionByZero extends Exception{
+class DivisionByZero extends Ex{
     public DivisionByZero(String message)
     {
         super(message);
