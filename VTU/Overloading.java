@@ -4,7 +4,7 @@ public class Overloading {
         System.out.println("Hello my name is : " + name);
     }
 
-    void printkaro(int age)
+    void printkaro(int age) 
     {
         System.out.println("My age is: "+ age);
     }
