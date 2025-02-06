@@ -1,10 +1,11 @@
 import java.util.Scanner;
-class DivisionByZero extends Ex{
+class DivisionByZero extends Exception{
     public DivisionByZero(String message)
     {
         super(message);
     }
-}class Calculator {
+}
+class Calculator {
     // Method
     static double divide(int numerator,int denominator) throws DivisionByZero
     {
