@@ -6,7 +6,7 @@ public class prg5
 
         System.out.println("Character at index 7: "+ str.charAt(7));
 
-        System.out.println("Character at index 7: "+ str.substring(7,11));
+        System.out.println("Character at index 7 and 11 : "+ str.substring(7,11));
 
         String str1 = "java";
         String str2 = "JAVA";
@@ -29,7 +29,7 @@ public class prg5
 
         System.out.println("replacing: "+ str.replace("Java" , "Python"));
 
-        System.out.println("Trim space" + "     trim String".trim());
+        System.out.println("Trim space " + "     trim String ".trim());
 
 
     }
