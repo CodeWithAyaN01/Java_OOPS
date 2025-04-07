@@ -10,7 +10,7 @@ class TensPlaceComparator implements Comparator<Integer>
 
         if (tensplace1 != tensplace2)
         {
-            return Integer.compare(tensplace1, tensplace2);
+            return Integer.compare(tensplace1 , tensplace2);
         }
         else
         {
