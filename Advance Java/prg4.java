@@ -1,5 +1,5 @@
 
-public class pr4
+public class prg4
 {
     public static void main(String[] args) {
         
