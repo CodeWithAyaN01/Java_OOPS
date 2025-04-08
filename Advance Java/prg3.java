@@ -41,10 +41,9 @@ public class prg3
             {
                 System.out.println("Enter thr no accordingly ");
             }
-            
         }
         Collections.sort(number,new TensPlaceComparator());
-        System.err.println("Sorted Elems : " + number);
+        System.out.println("Sorted Elems : " + number);
     }
 }
 
