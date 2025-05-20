@@ -1,0 +1,25 @@
+import java.awt.FlowLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Swingprg {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Button Demo");
+        frame.setSize(300, 150);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new FlowLayout());
+
+        JButton alphaBtn = new JButton("Alpha");
+        JButton betaBtn = new JButton("Beta");
+        JLabel label = new JLabel("Click a button");
+
+        alphaBtn.addActionListener(e -> label.setText("Alpha pressed"));
+        betaBtn.addActionListener(e -> label.setText("Beta pressed"));
+        frame.add(alphaBtn);
+        frame.add(betaBtn);
+        frame.add(label);
+
+        frame.setVisible(true);
+    }
+}
