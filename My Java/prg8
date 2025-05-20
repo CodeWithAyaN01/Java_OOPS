@@ -1,0 +1,47 @@
+// HTML file
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Program 8</title>
+</head>
+<body>
+	<h2>Enter your name : </h2>
+	<form action="p8" method = "post">
+		<input type = "text" name = "username">
+		<input type = "submit" value = "submit">
+	</form>
+</body>
+</html>
+
+
+
+
+//Servlet files
+
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+{
+		doGet(request, response);
+		
+		response.setContentType("text/html");  // main lines
+		
+		PrintWriter out = response.getWriter();  // main lines
+		
+		String name = request.getParameter("username");  // main lines
+		
+		out.println("<html><body>");  // main lines
+		
+		out.println("<h2> Hello" + name + "!</h2>");  // main lines
+		
+		out.println("<h3>How are you? </h3>");  // main lines
+
+		out.println("</html></body>");  // main lines
+	}
+
+}
+
+
+
