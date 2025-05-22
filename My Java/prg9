@@ -1,0 +1,66 @@
+// html 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+    <h2>Enter Student Details</h2>
+    <form action="prg9Servlet" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="usn">USN:</label>
+        <input type="text" id="usn" name="usn" required><br><br>
+
+        <label for="totalMarks">Total Marks:</label>
+        <input type="number" id="totalMarks" name="totalMarks" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+
+// servlet
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+		
+		    response.setContentType("text/html"); 
+		 
+         
+        String name = request.getParameter("name"); 
+        String usn = request.getParameter("usn"); 
+        String totalMarksStr = request.getParameter("totalMarks"); 
+ 
+         
+        int totalMarks = 0; 
+        try { 
+            totalMarks = Integer.parseInt(totalMarksStr); 
+        } catch (NumberFormatException e) { 
+            e.printStackTrace(); 
+ 
+        } 
+ 
+        
+        PrintWriter out = response.getWriter(); 
+ 
+        
+        out.println("<html><head><title>Student Details</title></head><body>"); 
+        out.println("<h1>Student Details</h1>"); 
+        out.println("<p>Name: " + name + "</p>"); 
+        out.println("<p>USN: " + usn + "</p>"); 
+        out.println("<p>Total Marks: " + totalMarks + "</p>"); 
+        out.println("</body></html>"); 
+ 
+        
+        out.close();
+	}
+
+

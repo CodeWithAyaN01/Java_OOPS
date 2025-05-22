@@ -1,0 +1,42 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class javaDB {
+    public static void main(String[] args) throws SQLException {
+        // Database connection details
+        String jdbcURL = "jdbc:oracle:thin:@localhost:1521:xe"; // 'xe' is common for Oracle Express Edition
+        String username = "system"; // Oracle system user
+        String password = "system"; // Replace with your actual system password
+
+        try {
+            // Load Oracle JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            // Connect to Oracle database
+            Connection conn = DriverManager.getConnection(jdbcURL, username, password);
+
+            // SQL to insert a row
+            String sql = "INSERT INTO users (id, name) VALUES (1, 'Krishna')";
+
+            // Prepare and execute the statement
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            int result = stmt.executeUpdate();
+
+            if (result > 0) {
+                System.out.println("Row inserted successfully!");
+            }
+
+            // Close resources
+            stmt.close();
+            conn.close();
+
+        } catch (ClassNotFoundException e) {
+            System.out.println("JDBC Driver not found.");
+            e.printStackTrace();
+        }
+        }
+    }
+
+

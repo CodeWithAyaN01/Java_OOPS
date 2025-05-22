@@ -1,0 +1,60 @@
+html -------------------
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Cookie</title>
+</head>
+<body>
+    <h2>Click the button to create a cookie</h2>
+    <form action="CreateCookie" method="post">
+        <input type="submit" value="Create Cookie">
+    </form>
+</body>
+</html>
+
+
+create cookie --------------------
+
+
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		  response.setContentType("text/html");
+	    PrintWriter out = response.getWriter();
+
+	    Cookie empCookie = new Cookie("EMPID", "AN2356");
+	    empCookie.setMaxAge(3600); // Cookie valid for 1 hour
+	    response.addCookie(empCookie);
+
+	    out.println("<html><body>");
+	    out.println("<h3>Cookie EMPID = AN2356 has been created.</h3>");
+	    out.println("<a href='ReadCookie'>Click here to read the cookie</a>");
+	    out.println("</body></html>");
+	}
+
+
+read cookie------------------
+
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		Cookie[] cookies = request.getCookies();
+        String empIdValue = "Not Found";
+
+        if (cookies != null) {
+            for (Cookie c : cookies) {
+                if (c.getName().equals("EMPID")) {
+                    empIdValue = c.getValue();
+                    break;
+                }
+            }
+        }
+
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+
+        out.println("<html><body>");
+        out.println("<h3>EMPID Cookie Value: " + empIdValue + "</h3>");
+        out.println("</body></html>");
+		
+	}
+
