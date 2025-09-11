@@ -22,7 +22,7 @@ public class LL2 {
     public static void main(String[] args) {
         int[] array = {1,2,3,4,5,6};
         LinkedList<Integer> list = new LinkedList<>();
-        Node head = new Node(array[0],null);
+        Node head = new Node(array[0],null); // assigning he first value of array to the head node 
         Node current = head;
         for(int i=1;i< array.length ;i++)
         {
