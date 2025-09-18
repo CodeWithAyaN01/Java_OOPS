@@ -1,7 +1,4 @@
 
-
-
-
 class Node{
     int data;
     Node next;
@@ -27,6 +24,22 @@ public class insertAtHead {
         head = temp;
         return head;
     }
+
+    Node insertAttail(Node head ,int value)
+    {
+        if(head == null || head.next == null){
+            return null;
+        }
+        
+        Node temp = head;
+        Node elem = new Node(value,null);
+        while(temp.next != null)
+        {
+            temp = temp.next;
+        }
+        temp.next = elem;
+        return head;
+    }
     public static void main(String[] args) {
         Node head = new Node(1);
         Node n1 = new Node(2);
@@ -38,9 +51,12 @@ public class insertAtHead {
         n1.next = n2;
         n2.next = n3;
         n3.next = n4;
+
         insertAtHead obj = new insertAtHead();
-        head = obj.insertAtHead(head,0);
+        head = obj.insertAtHead(head,0); //  inserted 0 at the head
+        head = obj.insertAttail(head, 6); //  inserted 6 at tail of
         Node temp = head;
+
         while(temp!=null)
         {
             System.out.println("The node Value is : "+ temp.data);
