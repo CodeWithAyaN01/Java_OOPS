@@ -15,7 +15,7 @@ class Node{
     }
 }
 
-public class insertAtHead {
+public class LinkedListInsertionandDeletion {
 
     Node insertAtHead(Node head,int value)
     {
@@ -76,7 +76,7 @@ public class insertAtHead {
         n2.next = n3;
         n3.next = n4;
 
-        insertAtHead obj = new insertAtHead();
+        LinkedListInsertionandDeletion obj = new LinkedListInsertionandDeletion();
         head = obj.insertAtHead(head,0); //  inserted 0 at the head
         head = obj.insertAttail(head, 6); //  inserted 6 at tail of
         head = obj.insertAtK(head, 69, 0); //  insert at k number
