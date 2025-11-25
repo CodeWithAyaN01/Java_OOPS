@@ -32,7 +32,8 @@ public class Program6 {
             for (i = 0; i < n; i++) {
                 for (j = 0; j < n; j++) {
                     for (k = 0; k < n; k++) {
-                        if (dist[i][j] > dist[i][k] + dmat[k][j]) {
+                        if (dist[i][j] > dist[i][k] + dmat[k][j]) 
+                        {
                             dist[i][j] = dist[i][k] + dmat[k][j];
                             via[i][j] = k;
                             count++;
