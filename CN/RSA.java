@@ -26,7 +26,7 @@ public class RSA {
 
         e = BigInteger.probablePrime(bitlength / 2, r);
 
-        while (phi.gcd(e).compareTo(BigInteger.ONE) > 0 && e.compareTo(phi) < 0) {
+        while ( phi.gcd(e).compareTo(BigInteger.ONE) > 0 && e.compareTo(phi) < 0) {
             e = e.add(BigInteger.ONE);
         }
 
@@ -40,7 +40,8 @@ public class RSA {
         this.N = N;
     }
 
-    @SuppressWarnings("deprecation")
+    // @SuppressWarnings("deprecation")
+    // @SuppressWarnings("deprecation")
     public static void main(String[] args) throws IOException {
 
         RSA rsa = new RSA();
@@ -61,7 +62,6 @@ public class RSA {
         System.out.println("Decrypting Bytes: " + bytesToString(decrypted));
         System.out.println("Decrypted String: " + new String(decrypted));
     }
-
     // Convert bytes to string (for printing)
     private static String bytesToString(byte[] encrypted) {
         String result = "";
